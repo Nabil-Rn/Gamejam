@@ -7,6 +7,8 @@ var player = null
 func _physics_process(delta: float) -> void:
 		if player_chase:
 			position += (player.position - position) / speed_reduce
+			#$AnimatedSprite2D.play()
+#			
 
 func _on_detection_area_body_entered(body: Node2D) -> void:
 	player = body

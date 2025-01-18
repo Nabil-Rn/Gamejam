@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://bc8x2ifp6d6gi"]
+
+[ext_resource type="Script" path="res://Script/enemy.gd" id="1_q5y7a"]
+[ext_resource type="Texture2D" uid="uid://c2r6tlfe1qtwf" path="res://assets/goblin.png" id="2_dhktq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_crxv8"]
+radius = 57.0
+height = 114.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0t4cg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dhktq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n2xqk"]
+radius = 343.11
+
+[node name="enemy" type="CharacterBody2D"]
+position = Vector2(1053, 466)
+script = ExtResource("1_q5y7a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, -3)
+shape = SubResource("CapsuleShape2D_crxv8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.40947, 0.333467)
+sprite_frames = SubResource("SpriteFrames_0t4cg")
+
+[node name="detection_area" type="Area2D" parent="."]
+position = Vector2(1, 0)
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
+shape = SubResource("CircleShape2D_n2xqk")
+
+[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
