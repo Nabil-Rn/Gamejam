@@ -14,6 +14,7 @@ config/name="GameJam-2025"
 run/main_scene="res://scenes/node_2d.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://assets/icon.svg"
+<<<<<<<HEADrun/main_scene="res://scenes/node_2d.tscn"
 
 [autoload]
 
