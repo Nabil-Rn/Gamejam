@@ -1,8 +1,8 @@
 extends Node
 
 
-var health = 0
-
+var health = 3
+var direction = 1
 func loseHealth(healthlost):
 	if (health + healthlost > 0):
 		health -= healthlost

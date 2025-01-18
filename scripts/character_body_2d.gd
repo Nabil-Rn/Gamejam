@@ -19,6 +19,16 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * SPEED
 	else:
+		
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-	
+	if velocity.x < 0:
+		Global.direction = -1
+		$young.flip_h = 1
+		$old.flip_h = 1
+		$medium.flip_h = 1
+	elif velocity.x > 0:
+		Global.direction = 1
+		$young.flip_h = 0
+		$old.flip_h = 0
+		$medium.flip_h = 0
 	move_and_slide()
