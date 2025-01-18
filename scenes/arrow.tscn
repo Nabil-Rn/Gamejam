@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bi45op3ccp6um"]
+[gd_scene load_steps=4 format=3 uid="uid://bi45op3ccp6um"]
 
+[ext_resource type="Script" path="res://scenes/arrow.gd" id="1_7ueq1"]
 [ext_resource type="Texture2D" uid="uid://bj6ebvr15pu46" path="res://assets/icon.svg" id="1_lkhm0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jgcjc"]
 radius = 84.8755
 
 [node name="arrow" type="CharacterBody2D"]
+script = ExtResource("1_7ueq1")
 
 [node name="arrow" type="Sprite2D" parent="."]
 scale = Vector2(1.83, 1.83)
