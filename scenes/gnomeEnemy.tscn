@@ -23,6 +23,8 @@ radius = 343.11
 
 [node name="gnomeEnemy" type="CharacterBody2D"]
 position = Vector2(-2, 2)
+collision_layer = 9
+collision_mask = 9
 script = ExtResource("1_re05e")
 
 [node name="attack" type="Area2D" parent="."]

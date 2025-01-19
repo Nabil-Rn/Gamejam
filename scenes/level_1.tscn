@@ -1,9 +1,9 @@
-[gd_scene load_steps=12 format=4 uid="uid://dcxwty3un570e"]
+[gd_scene load_steps=12 format=4 uid="uid://cy8p3sifc60km"]
 
 [ext_resource type="PackedScene" uid="uid://jcwsh3vxda2h" path="res://scenes/player.tscn" id="2_4sqoj"]
-[ext_resource type="PackedScene" path="res://scenes/goblinEnemy.tscn" id="3_8rw5s"]
+[ext_resource type="PackedScene" uid="uid://cevbmvcidygtr" path="res://scenes/goblinEnemy.tscn" id="3_8rw5s"]
 [ext_resource type="Texture2D" uid="uid://cg5any0ksdv24" path="res://assets/sun.png" id="3_kud7t"]
-[ext_resource type="PackedScene" path="res://scenes/gnomeEnemy.tscn" id="4_abd5u"]
+[ext_resource type="PackedScene" uid="uid://b7jn8ca3gntar" path="res://scenes/gnomeEnemy.tscn" id="4_abd5u"]
 [ext_resource type="Texture2D" uid="uid://djjmpwuget1yh" path="res://assets/pixil-frame-0.png" id="5_l388s"]
 [ext_resource type="Texture2D" uid="uid://doek6mqlp2ktu" path="res://assets/world_tileset.png" id="6_8v0do"]
 [ext_resource type="Texture2D" uid="uid://x2j28offfnnl" path="res://assets/pixil-frame-0 (1).png" id="7_nby4y"]

@@ -6,13 +6,13 @@ func _process(delta: float) -> void:
 	if(Input.is_key_pressed(KEY_J)):
 		play("attack", 1.0, false)
 		if(Global.direction == 1):
-			$"../attackright".disabled = false
+			$"../Area2D/attackright".disabled = false
 			await $".".animation_finished
-			$"../attackright".disabled = true
+			$"../Area2D/attackright".disabled = true
 		elif(Global.direction == -1):
-			$"../attackleft".disabled = false
+			$"../Area2D2/attackleft".disabled = false
 			await $".".animation_finished
-			$"../attackleft".disabled = true
+			$"../Area2D/attackright".disabled = true
 	elif(Input.is_key_pressed(KEY_K)):
 		play("axe throw", 1.0, false)
 	if((Input.is_key_pressed(KEY_D) || Input.is_key_pressed(KEY_A)) && Input.is_key_pressed(KEY_SHIFT)):
