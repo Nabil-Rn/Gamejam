@@ -1,14 +1,14 @@
-[gd_scene load_steps=8 format=4 uid="uid://bn61kkd31yx8g"]
+[gd_scene load_steps=8 format=4 uid="uid://cy8p3sifc60km"]
 
 [ext_resource type="Texture2D" uid="uid://bj6ebvr15pu46" path="res://assets/icon.svg" id="1_3ag81"]
 [ext_resource type="PackedScene" uid="uid://jcwsh3vxda2h" path="res://scenes/player.tscn" id="2_4sqoj"]
-[ext_resource type="PackedScene" uid="uid://bc8x2ifp6d6gi" path="res://scenes/goblinEnemy.tscn" id="3_8rw5s"]
-[ext_resource type="PackedScene" uid="uid://di2seqp5umcpe" path="res://scenes/gnomeEnemy.tscn" id="4_abd5u"]
+[ext_resource type="PackedScene" uid="uid://cevbmvcidygtr" path="res://scenes/goblinEnemy.tscn" id="3_8rw5s"]
+[ext_resource type="PackedScene" uid="uid://b7jn8ca3gntar" path="res://scenes/gnomeEnemy.tscn" id="4_abd5u"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_la7nl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qvcc3"]
-texture = ExtResource("1_uqa7r")
+texture = ExtResource("1_3ag81")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
