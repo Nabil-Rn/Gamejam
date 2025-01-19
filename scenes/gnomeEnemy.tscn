@@ -1,17 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://cevbmvcidygtr"]
+[gd_scene load_steps=6 format=3 uid="uid://b7jn8ca3gntar"]
 
-[ext_resource type="Script" path="res://Script/goblinEnemy.gd" id="1_q5y7a"]
-[ext_resource type="Texture2D" uid="uid://drwq64jkhryok" path="res://assets/goblin.png" id="2_dhktq"]
+[ext_resource type="Script" path="res://Script/gnomeEnemy.gd" id="1_re05e"]
+[ext_resource type="Texture2D" uid="uid://drwq64jkhryok" path="res://assets/goblin.png" id="2_6wa44"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_crxv8"]
-radius = 57.0
-height = 114.0
+radius = 53.0
+height = 124.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0t4cg"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_dhktq")
+"texture": ExtResource("2_6wa44")
 }],
 "loop": true,
 "name": &"default",
@@ -21,9 +21,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_n2xqk"]
 radius = 343.11
 
-[node name="goblinEnemy" type="CharacterBody2D"]
+[node name="gnomeEnemy" type="CharacterBody2D"]
 position = Vector2(-2, 2)
-script = ExtResource("1_q5y7a")
+script = ExtResource("1_re05e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, -3)
