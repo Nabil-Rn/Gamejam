@@ -151,8 +151,8 @@ tile_set = SubResource("TileSet_37t7a")
 [node name="young" parent="." instance=ExtResource("2_4sqoj")]
 position = Vector2(577, 512)
 
-[node name="goblinEnemy" parent="." instance=ExtResource("3_8rw5s")]
-position = Vector2(999, 546)
-
 [node name="gnomeEnemy" parent="." instance=ExtResource("4_abd5u")]
-position = Vector2(17, 544)
+position = Vector2(-27, 538)
+
+[node name="goblinEnemy" parent="." instance=ExtResource("3_8rw5s")]
+position = Vector2(1015, 561)

@@ -17,6 +17,7 @@ func _physics_process(delta: float) -> void:
 	if is_gnome_chase:
 		var direction = (player.position - position).normalized()
 		velocity.x = direction.x * speed
+		print("it works")
 		#$AnimatedSprite2D.play()
 	
 	if taking_damage:

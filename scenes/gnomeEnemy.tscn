@@ -1,17 +1,17 @@
 [gd_scene load_steps=6 format=3 uid="uid://b7jn8ca3gntar"]
 
-[ext_resource type="Script" path="res://Script/gnomeEnemy.gd" id="1_re05e"]
-[ext_resource type="Texture2D" uid="uid://drwq64jkhryok" path="res://assets/goblin.png" id="2_6wa44"]
+[ext_resource type="Script" path="res://scripts/gnomeEnemy.gd" id="1_re05e"]
+[ext_resource type="Texture2D" uid="uid://c3wtni6ymo8m" path="res://assets/gnome.png" id="2_g51tu"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_crxv8"]
-radius = 53.0
-height = 124.0
+radius = 74.0
+height = 148.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0t4cg"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_6wa44")
+"texture": ExtResource("2_g51tu")
 }],
 "loop": true,
 "name": &"default",
@@ -26,11 +26,12 @@ position = Vector2(-2, 2)
 script = ExtResource("1_re05e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(8, -3)
+position = Vector2(10, -23)
 shape = SubResource("CapsuleShape2D_crxv8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.40947, 0.333467)
+position = Vector2(26, -13)
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_0t4cg")
 
 [node name="detection_area" type="Area2D" parent="."]

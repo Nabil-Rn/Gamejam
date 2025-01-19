@@ -1,11 +1,11 @@
 [gd_scene load_steps=6 format=3 uid="uid://cevbmvcidygtr"]
 
-[ext_resource type="Script" path="res://Script/goblinEnemy.gd" id="1_q5y7a"]
+[ext_resource type="Script" path="res://scripts/goblinEnemy.gd" id="1_q5y7a"]
 [ext_resource type="Texture2D" uid="uid://drwq64jkhryok" path="res://assets/goblin.png" id="2_dhktq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_crxv8"]
-radius = 57.0
-height = 114.0
+radius = 68.0
+height = 136.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0t4cg"]
 animations = [{
@@ -26,11 +26,12 @@ position = Vector2(-2, 2)
 script = ExtResource("1_q5y7a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(8, -3)
+position = Vector2(9, -20)
 shape = SubResource("CapsuleShape2D_crxv8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.40947, 0.333467)
+position = Vector2(10, 30)
+scale = Vector2(3.684, 3)
 sprite_frames = SubResource("SpriteFrames_0t4cg")
 
 [node name="detection_area" type="Area2D" parent="."]
