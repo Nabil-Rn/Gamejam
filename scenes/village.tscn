@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxab6i37tvnux"]
+[gd_scene load_steps=8 format=3 uid="uid://dxab6i37tvnux"]
 
 [ext_resource type="Texture2D" uid="uid://cgsoe1bhbay12" path="res://assets/house.png" id="1_5cwh7"]
 [ext_resource type="Texture2D" uid="uid://c3wtni6ymo8m" path="res://assets/gnome.png" id="2_uopys"]
 [ext_resource type="Texture2D" uid="uid://btql3wrerelfm" path="res://assets/trees.png" id="3_llqbw"]
+[ext_resource type="Script" path="res://scenes/timer.gd" id="4_r07ma"]
 
 [sub_resource type="Animation" id="Animation_kh7lb"]
 length = 0.001
@@ -620,3 +621,11 @@ offset_right = -694.0
 offset_bottom = -768.0
 scale = Vector2(78.6042, 45.7568)
 color = Color(0.278451, 0.739226, 3.85046e-07, 1)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true
+autostart = true
+script = ExtResource("4_r07ma")
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]

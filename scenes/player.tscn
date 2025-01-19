@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://jcwsh3vxda2h"]
+[gd_scene load_steps=26 format=3 uid="uid://jcwsh3vxda2h"]
 
 [ext_resource type="Script" path="res://scripts/dmgScript.gd" id="1_clrhy"]
 [ext_resource type="Script" path="res://scripts/character_body_2d.gd" id="1_ho7py"]
@@ -140,49 +140,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_j4wue"]
-atlas = ExtResource("4_sd2p1")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j77kl"]
-atlas = ExtResource("4_sd2p1")
-region = Rect2(100, 0, 100, 100)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_8cgce"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j4wue")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j77kl")
-}],
-"loop": true,
-"name": &"new_animation",
-"speed": 5.0
-}]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_knllp"]
-atlas = ExtResource("4_sd2p1")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d2h7u"]
-atlas = ExtResource("4_sd2p1")
-region = Rect2(100, 0, 100, 100)
+animations = []
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_s4i0a"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_knllp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d2h7u")
-}],
-"loop": true,
-"name": &"new_animation",
-"speed": 5.0
-}]
+animations = []
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tgwyb"]
 radius = 200.0
@@ -215,14 +177,13 @@ script = ExtResource("5_olpve")
 [node name="medium" type="AnimatedSprite2D" parent="."]
 position = Vector2(5, -125)
 sprite_frames = SubResource("SpriteFrames_8cgce")
-animation = &"new_animation"
+animation = &""
 script = ExtResource("5_olpve")
 
 [node name="young" type="AnimatedSprite2D" parent="."]
 position = Vector2(11, -125)
 sprite_frames = SubResource("SpriteFrames_s4i0a")
-animation = &"new_animation"
-autoplay = "new_animation"
+animation = &""
 script = ExtResource("5_olpve")
 
 [node name="coolDown" type="Timer" parent="."]
