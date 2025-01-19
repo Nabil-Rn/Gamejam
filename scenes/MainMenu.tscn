@@ -29,7 +29,7 @@ text = "How to play"
 
 [node name="credit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "credits"
+text = "Credits"
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2

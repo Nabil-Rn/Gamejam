@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://sn8qg7lg8dl8"]
+
+[node name="villageEND" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -590.0
+offset_top = -345.0
+offset_right = -550.0
+offset_bottom = -305.0
+scale = Vector2(30.6744, 16.7058)
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -122.0
+offset_top = -115.0
+offset_right = -82.0
+offset_bottom = -75.0
+scale = Vector2(7.82442, 9.63425)
+text = "END"
+tab_size = 1
