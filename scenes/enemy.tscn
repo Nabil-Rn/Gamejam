@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bc8x2ifp6d6gi"]
+[gd_scene load_steps=6 format=3 uid="uid://22yyr1ok23cg"]
 
-[ext_resource type="Script" path="res://Script/enemy.gd" id="1_q5y7a"]
-[ext_resource type="Texture2D" uid="uid://c2r6tlfe1qtwf" path="res://assets/goblin.png" id="2_dhktq"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_jueif"]
+[ext_resource type="Texture2D" uid="uid://drwq64jkhryok" path="res://assets/goblin.png" id="2_dhktq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_crxv8"]
 radius = 57.0
@@ -23,7 +23,7 @@ radius = 343.11
 
 [node name="enemy" type="CharacterBody2D"]
 position = Vector2(1053, 466)
-script = ExtResource("1_q5y7a")
+script = ExtResource("1_jueif")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, -3)
