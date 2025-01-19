@@ -25,9 +25,15 @@ radius = 343.11
 position = Vector2(-2, 2)
 script = ExtResource("1_re05e")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="attack" type="Area2D" parent="."]
 position = Vector2(10, -23)
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack"]
+scale = Vector2(1.5, 1.5)
 shape = SubResource("CapsuleShape2D_crxv8")
+debug_color = Color(0.870458, 0.277175, 0.550702, 0.42)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(26, -13)
@@ -42,4 +48,9 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
 shape = SubResource("CircleShape2D_n2xqk")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, -23)
+shape = SubResource("CapsuleShape2D_crxv8")
+
+[connection signal="body_entered" from="attack" to="." method="_on_attack_body_entered"]
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]

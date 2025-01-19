@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cevbmvcidygtr"]
+[gd_scene load_steps=7 format=3 uid="uid://cevbmvcidygtr"]
 
 [ext_resource type="Script" path="res://scripts/goblinEnemy.gd" id="1_q5y7a"]
 [ext_resource type="Texture2D" uid="uid://drwq64jkhryok" path="res://assets/goblin.png" id="2_dhktq"]
+[ext_resource type="Script" path="res://scenes/goblin_animated_sprite_2d.gd" id="3_n54qv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_crxv8"]
 radius = 68.0
@@ -33,6 +34,7 @@ shape = SubResource("CapsuleShape2D_crxv8")
 position = Vector2(10, 30)
 scale = Vector2(3.684, 3)
 sprite_frames = SubResource("SpriteFrames_0t4cg")
+script = ExtResource("3_n54qv")
 
 [node name="detection_area" type="Area2D" parent="."]
 position = Vector2(1, 0)

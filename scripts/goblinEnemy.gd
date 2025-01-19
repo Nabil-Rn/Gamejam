@@ -11,8 +11,7 @@ var taking_damage: bool = false
 var damage_to_deal = 20
 
 func _physics_process(delta: float) -> void:		
-	if is_goblin_detect:
-		_attack()
+	#if is_goblin_detect:
 		#$AnimatedSprite2D.play()
 	
 	if taking_damage:
@@ -22,7 +21,7 @@ func _physics_process(delta: float) -> void:
 		dead = true
 
 func _attack():
-	print("test")
+	Global.loseHealth(1)
 	
 
 func _on_detection_area_body_entered(body: Node2D) -> void:

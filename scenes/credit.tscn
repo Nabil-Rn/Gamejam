@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bua625cfwgnum"]
 
-[ext_resource type="Script" path="res://Script/how.gd" id="1_1nbm7"]
+[ext_resource type="Script" path="res://scripts/how.gd" id="1_1nbm7"]
 
 [node name="credit" type="Control"]
 layout_mode = 3
