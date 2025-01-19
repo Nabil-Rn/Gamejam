@@ -32,11 +32,3 @@ func _physics_process(delta: float) -> void:
 		$old.flip_h = 0
 		$medium.flip_h = 0
 	move_and_slide()
-
-
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	body._take_damage(1)
-
-
-func _on_area_2d_2_body_entered_left(body: Node2D) -> void:
-	body._take_damage(1)

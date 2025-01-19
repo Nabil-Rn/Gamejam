@@ -188,30 +188,20 @@ script = ExtResource("5_olpve")
 
 [node name="coolDown" type="Timer" parent="."]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-8, -361)
-zoom = Vector2(0.645, 0.645)
-
-[node name="Area2D" type="Area2D" parent="."]
-collision_layer = 8
-collision_mask = 8
-
-[node name="attackright" type="CollisionShape2D" parent="Area2D"]
+[node name="attackright" type="CollisionShape2D" parent="."]
 position = Vector2(217, -153)
 shape = SubResource("CapsuleShape2D_tgwyb")
 disabled = true
 
-[node name="Area2D2" type="Area2D" parent="."]
-collision_layer = 8
-collision_mask = 8
-
-[node name="attackleft" type="CollisionShape2D" parent="Area2D2"]
+[node name="attackleft" type="CollisionShape2D" parent="."]
 position = Vector2(-214, -145)
 shape = SubResource("CapsuleShape2D_tgwyb")
 disabled = true
 debug_color = Color(0.873729, 0, 0.324222, 0.42)
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-8, -361)
+zoom = Vector2(0.645, 0.645)
+
 [connection signal="animation_finished" from="old" to="old" method="_on_animation_finished"]
 [connection signal="timeout" from="coolDown" to="old" method="_on_cool_down_timeout"]
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered_left"]
