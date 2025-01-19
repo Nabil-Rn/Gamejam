@@ -8,11 +8,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if (Global.health == 0):
-		$"../old".visible = false
-		$"../medium".visible = false
-		$"../young".visible = true
-		$"../1x1".disabled = false
-		$"../1x2".disabled = true
+		get_tree().change_scene_to_file("res://scenes/death.tscn")
 	if (Global.health == 1):
 		$"../old".visible = false
 		$"../medium".visible = false
