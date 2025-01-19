@@ -1,13 +1,6 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=12 format=4 uid="uid://cy8p3sifc60km"]
-
-[ext_resource type="PackedScene" uid="uid://jcwsh3vxda2h" path="res://scenes/player.tscn" id="2_4sqoj"]
-[ext_resource type="PackedScene" uid="uid://cevbmvcidygtr" path="res://scenes/goblinEnemy.tscn" id="3_8rw5s"]
-=======
 [gd_scene load_steps=13 format=4 uid="uid://dcxwty3un570e"]
 
 [ext_resource type="PackedScene" uid="uid://jcwsh3vxda2h" path="res://scenes/player.tscn" id="2_4sqoj"]
->>>>>>> Stashed changes
 [ext_resource type="Texture2D" uid="uid://cg5any0ksdv24" path="res://assets/sun.png" id="3_kud7t"]
 [ext_resource type="PackedScene" uid="uid://b7jn8ca3gntar" path="res://scenes/gnomeEnemy.tscn" id="4_abd5u"]
 [ext_resource type="Texture2D" uid="uid://djjmpwuget1yh" path="res://assets/pixil-frame-0.png" id="5_l388s"]
@@ -60,7 +53,7 @@ size = Vector2(2085, 526)
 [node name="level1" type="Node2D"]
 
 [node name="young" parent="." instance=ExtResource("2_4sqoj")]
-position = Vector2(9208, -44)
+position = Vector2(-462, 668)
 
 [node name="ColorRect" type="ColorRect" parent="young"]
 z_index = -860
@@ -102,12 +95,11 @@ tile_set = SubResource("TileSet_bh7sd")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(130, 151)
+position = Vector2(96, 465)
 script = ExtResource("7_3d8oe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(10418, 720)
 shape = SubResource("RectangleShape2D_4ilrx")
 
-[connection signal="area_shape_entered" from="Area2D" to="Area2D" method="_on_area_shape_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
